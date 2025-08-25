@@ -1,0 +1,71 @@
+{
+  "kirana": {
+    "title": "🛒 Kirana Shops",
+    "shops": [
+      {
+        "name": "Ramesh Kirana Store",
+        "address": "Main Road, City Center",
+        "items": [
+          { "name": "Rice", "unit": "1kg", "price": 50 },
+          { "name": "Atta", "unit": "1kg", "price": 40 },
+          { "name": "Sugar", "unit": "1kg", "price": 45 }
+        ]
+      },
+      {
+        "name": "Sharma General Store",
+        "address": "Near Bus Stand",
+        "items": [
+          { "name": "Dal (Masoor)", "unit": "1kg", "price": 60 },
+          { "name": "Salt", "unit": "1kg", "price": 20 },
+          { "name": "Tea", "unit": "250g", "price": 70 }
+        ]
+      }
+    ]
+  },
+  "fastfoods": {
+    "title": "🍔 Fastfood Shops",
+    "shops": [
+      {
+        "name": "Maa Fast Food Corner",
+        "address": "Station Road",
+        "items": [
+          { "name": "Burger", "unit": "per piece", "price": 40 },
+          { "name": "Pizza", "unit": "per slice", "price": 80 },
+          { "name": "French Fries", "unit": "per plate", "price": 60 }
+        ]
+      },
+      {
+        "name": "Zaika Snacks",
+        "address": "Market Chowk",
+        "items": [
+          { "name": "Samosa", "unit": "per piece", "price": 15 },
+          { "name": "Chowmein", "unit": "per plate", "price": 50 },
+          { "name": "Momos", "unit": "per plate", "price": 70 }
+        ]
+      }
+    ]
+  },
+  "dairy": {
+    "title": "🥛 Dairy & Drinks",
+    "shops": [
+      {
+        "name": "Amul Dairy",
+        "address": "Near City Mall",
+        "items": [
+          { "name": "Milk", "unit": "1 liter", "price": 55 },
+          { "name": "Curd", "unit": "500g", "price": 35 },
+          { "name": "Paneer", "unit": "250g", "price": 80 }
+        ]
+      },
+      {
+        "name": "Cool Drinks Point",
+        "address": "College Road",
+        "items": [
+          { "name": "Coca Cola", "unit": "750ml", "price": 40 },
+          { "name": "Sprite", "unit": "750ml", "price": 40 },
+          { "name": "Frooti", "unit": "600ml", "price": 30 }
+        ]
+      }
+    ]
+  }
+}

@@ -1,55 +1,45 @@
-// Simple data storage for shops and their items
-// This can be easily replaced with a database in the future
-
 const shops = {
-  shop1: {
-    name: "Fresh Mart",
-    code: "shop1",
+  kirana: {
+    code: "kirana",
+    name: "🛒 Kirana Store",
     items: {
-      "atta": { name: "Aashirvaad Atta", price: 45, unit: "kg" },
-      "sugar": { name: "Madhur Sugar", price: 40, unit: "kg" },
-      "rice": { name: "Basmati Rice", price: 80, unit: "kg" },
-      "milk": { name: "Amul Milk", price: 25, unit: "liter" },
-      "bread": { name: "Britannia Bread", price: 45, unit: "loaf" },
-      "eggs": { name: "Farm Fresh Eggs", price: 6, unit: "piece" },
-      "oil": { name: "Fortune Oil", price: 150, unit: "liter" },
-      "salt": { name: "Tata Salt", price: 25, unit: "kg" }
+      rice: { name: "Rice", price: 60, unit: "kg" },
+      atta: { name: "Atta", price: 50, unit: "kg" },
+      sugar: { name: "Sugar", price: 45, unit: "kg" },
+      oil: { name: "Cooking Oil", price: 120, unit: "liter" },
+      salt: { name: "Salt", price: 20, unit: "kg" }
     }
   },
-  shop2: {
-    name: "Quick Grocery",
-    code: "shop2",
+  fastfood: {
+    code: "fastfood",
+    name: "🍔 Fastfood Shop",
     items: {
-      "atta": { name: "Pillsbury Atta", price: 42, unit: "kg" },
-      "sugar": { name: "Dhampur Sugar", price: 38, unit: "kg" },
-      "rice": { name: "Kolam Rice", price: 60, unit: "kg" },
-      "milk": { name: "Mother Dairy Milk", price: 24, unit: "liter" },
-      "bread": { name: "Modern Bread", price: 40, unit: "loaf" },
-      "eggs": { name: "Country Eggs", price: 5, unit: "piece" },
-      "oil": { name: "Saffola Oil", price: 145, unit: "liter" },
-      "salt": { name: "Saffola Salt", price: 22, unit: "kg" }
+      maggi: { name: "Maggi Packet", price: 15, unit: "packet" },
+      chips: { name: "Chips Packet", price: 20, unit: "packet" },
+      bread: { name: "Bread", price: 30, unit: "packet" },
+      biscuit: { name: "Biscuit Packet", price: 10, unit: "packet" },
+      cold_drink: { name: "Cold Drink", price: 40, unit: "bottle" },
+      panipuri: { name: "Panipuri", price: 20, unit: "plate" },
+      samosa: { name: "Samosa", price: 15, unit: "piece" },
+      burger: { name: "Burger", price: 50, unit: "piece" },
+      pizza: { name: "Pizza", price: 200, unit: "piece" },
+      vadapav: { name: "Vada Pav", price: 20, unit: "piece" }
     }
   },
-  shop3: {
-    name: "Daily Needs",
-    code: "shop3",
+  dairy: {
+    code: "dairy",
+    name: "🥛 Dairy & Drinks",
     items: {
-      "atta": { name: "Shakti Bhog Atta", price: 43, unit: "kg" },
-      "sugar": { name: "Parry Sugar", price: 39, unit: "kg" },
-      "rice": { name: "Sona Masoori Rice", price: 70, unit: "kg" },
-      "milk": { name: "Nestle Milk", price: 26, unit: "liter" },
-      "bread": { name: "Wibs Bread", price: 42, unit: "loaf" },
-      "eggs": { name: "Brown Eggs", price: 7, unit: "piece" },
-      "oil": { name: "Gemini Oil", price: 140, unit: "liter" },
-      "salt": { name: "Annapurna Salt", price: 24, unit: "kg" }
+      milk: { name: "Milk", price: 30, unit: "liter" },
+      curd: { name: "Curd", price: 40, unit: "kg" },
+      paneer: { name: "Paneer", price: 300, unit: "kg" },
+      butter: { name: "Butter", price: 50, unit: "packet" },
+      egg: { name: "Egg", price: 6, unit: "piece" }
     }
   }
 };
 
-// User session storage (in-memory for prototype)
+// active user sessions
 const userSessions = new Map();
 
-module.exports = {
-  shops,
-  userSessions
-};
+module.exports = { shops, userSessions };
