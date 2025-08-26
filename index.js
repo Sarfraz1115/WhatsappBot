@@ -7,7 +7,6 @@ const normalizeItemName = require("./synonyms");
 const WEBHOOK_VERIFY_TOKEN = process.env.WHATSAPP_VERIFY_TOKEN || "verify-token-sarfraz";
 const WHATSAPP_ACCESS_TOKEN = process.env.WHATSAPP_ACCESS_TOKEN;
 const PHONE_NUMBER_ID = process.env.PHONE_NUMBER_ID;
-const SHOP_OWNER_NUMBER = process.env.SHOP_OWNER_NUMBER;
 const DELIVERY_BOY_NUMBER = process.env.DELIVERY_BOY_NUMBER;
 
 const app = express();
