@@ -25,6 +25,7 @@ app.get("/webhook", (req, res) => {
 
 // ---------- Webhook message handler ----------
 app.post("/webhook", async (req, res) => {
+  console.log("📩 Incoming Webhook:", JSON.stringify(req.body, null, 2)); // <-- yaha log
   const entry = req.body.entry?.[0];
   const messages = entry?.changes?.[0]?.value?.messages?.[0];
   if (!messages) return res.sendStatus(200);
@@ -282,6 +283,11 @@ ${session.address}
     console.error("❌ Forwarding error:", err.response?.data || err.message);
   }
 }
+
+(async () => {
+  const testNumber = "+917972191115"; // apna personal WhatsApp number dalna (with country code, no +)
+  await sendMessage(testNumber, "Hello 👋 QuickKirana API se test message!");
+})();
 
 // ---------- Start server ----------
 app.listen(3000, () => console.log("🚀 Bot running on port 3000"));
