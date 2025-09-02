@@ -284,10 +284,6 @@ ${session.address}
   }
 }
 
-(async () => {
-  const testNumber = "+917972191115"; // apna personal WhatsApp number dalna (with country code, no +)
-  await sendMessage(testNumber, "Hello 👋 QuickKirana API se test message!");
-})();
 
 // ---------- Start server ----------
 app.listen(3000, () => console.log("🚀 Bot running on port 3000"));
